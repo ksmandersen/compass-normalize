@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release information
-  s.version = "0.1.beta.1"
-  s.date = "2012-01-15"
+  s.version = "0.1.beta.2"
+  s.date = "2012-02-05"
   
   # Gem details
   s.name = "compass-normalize"

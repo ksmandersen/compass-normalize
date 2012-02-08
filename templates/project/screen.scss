@@ -1,6 +1,2 @@
 // Import the normalize plugin
-@import compass/normalize;
-
-// Output the code for normalizing the code.
-// This must be called from global scope.
-@include normalize();
+@import "normalize";

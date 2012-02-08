@@ -1,10 +1,8 @@
-/* =============================================================================
-   HTML5 display definitions
-   ========================================================================== */
+// ============================================================================
+// HTML5 display definitions
+// ============================================================================
 
-/*
- * Corrects block display not defined in IE6/7/8/9 & FF3
- */
+// Corrects block display not defined in IE6/7/8/9 & FF3
 
 article,
 aside,
@@ -19,9 +17,7 @@ section {
     display: block;
 }
 
-/*
- * Corrects inline-block display not defined in IE6/7/8/9 & FF3
- */
+// Corrects inline-block display not defined in IE6/7/8/9 & FF3
 
 audio,
 canvas,
@@ -31,31 +27,25 @@ video {
     *zoom: 1;
 }
 
-/*
- * Prevents modern browsers from displaying 'audio' without controls
- */
+// Prevents modern browsers from displaying 'audio' without controls
 
 audio:not([controls]) {
     display: none;
 }
 
-/*
- * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
- * Known issue: no IE6 support
- */
+// Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+// Known issue: no IE6 support
 
 [hidden] {
     display: none;
 }
 
 
-/* =============================================================================
-   Figures
-   ========================================================================== */
+// ============================================================================
+// Figures
+// ============================================================================
 
-/*
- * Addresses margin not present in IE6/7/8/9, S5, O11
- */
+// Addresses margin not present in IE6/7/8/9, S5, O11
 
 figure {
     margin: 0;

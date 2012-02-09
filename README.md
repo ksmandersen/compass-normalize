@@ -7,7 +7,7 @@ This simple plugin for [Compass](http://compass-style.org/) enables you to use [
 
 From the command line:
 
-	$ (sudo) gem install compass-normalize --pre
+	$ (sudo) gem install compass-normalize
 
 You can also install the gem from your local fork:
 

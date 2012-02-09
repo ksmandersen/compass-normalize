@@ -35,3 +35,13 @@ You can also just import parts you need:
 	@import "normalize/base";  // Basic styles
 	@import "normalize/html5"; // HTML5 elements
 	@import "normalize/forms"; // Form elements
+
+## Acknowledgements
+Many thanks to [Frederic Hemberger](https://github.com/fhemberger/) who contributed greatly to this project.
+
+## License
+This Code is released under [The Unlicense](http://unlicense.org/)
+
+### Major components:
+
+* [normalize.css](http://necolas.github.com/normalize.css/): Public domain

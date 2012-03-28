@@ -1,6 +1,6 @@
-// ============================================================================
+// =============================================================================
 // Forms
-// ============================================================================
+// ==========================================================================
 
 // Corrects margin displayed oddly in IE6/7
 
@@ -21,10 +21,10 @@ fieldset {
 // 3. Corrects alignment displayed oddly in IE6/7
 
 legend {
-    border: 0; // 1
+    border: 0; // 1 
     padding: 0;
-    white-space: normal; // 2
-    *margin-left: -7px; // 3
+    white-space: normal; // 2 
+    *margin-left: -7px; // 3 
 }
 
 // 1. Corrects font size not being inherited in all browsers
@@ -35,8 +35,8 @@ button,
 input,
 select,
 textarea {
-    font-size: 100%; // 1
-    margin: 0; // 2
+    font-size: 100%; // 1 
+    margin: 0; // 2 
     vertical-align: baseline; // 3
     *vertical-align: middle; // 3
 }
@@ -112,6 +112,6 @@ input::-moz-focus-inner {
 // 2. Improves readability and alignment in all browsers
 
 textarea {
-    overflow: auto; // 1
-    vertical-align: top; // 2
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
 }

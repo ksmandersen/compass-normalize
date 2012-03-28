@@ -1,6 +1,7 @@
-// ============================================================================
+// =============================================================================
 // HTML5 display definitions
-// ============================================================================
+// ========================================================================== */
+
 
 // Corrects block display not defined in IE6/7/8/9 & FF3
 
@@ -13,7 +14,8 @@ footer,
 header,
 hgroup,
 nav,
-section {
+section,
+summary {
     display: block;
 }
 
@@ -28,9 +30,11 @@ video {
 }
 
 // Prevents modern browsers from displaying 'audio' without controls
+// Remove excess height in iOS5 devices
 
 audio:not([controls]) {
     display: none;
+    height: 0;
 }
 
 // Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
@@ -38,15 +42,4 @@ audio:not([controls]) {
 
 [hidden] {
     display: none;
-}
-
-
-// ============================================================================
-// Figures
-// ============================================================================
-
-// Addresses margin not present in IE6/7/8/9, S5, O11
-
-figure {
-    margin: 0;
 }

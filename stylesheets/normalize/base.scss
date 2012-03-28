@@ -1,6 +1,6 @@
-// ============================================================================
+// =============================================================================
 // Base
-// ============================================================================
+// ==========================================================================
 
 // 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
 //    http://clagnut.com/blog/348/#c790
@@ -8,9 +8,9 @@
 //    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
 
 html {
-    font-size: 100%; // 1
-    -webkit-text-size-adjust: 100%; // 2
-    -ms-text-size-adjust: 100%; // 2
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
 }
 
 // Addresses font-family inconsistency between 'textarea' and other form elements.
@@ -30,9 +30,10 @@ body {
 }
 
 
-// ============================================================================
+// =============================================================================
 // Links
-// ============================================================================
+// ========================================================================== */
+
 
 // Addresses outline displayed oddly in Chrome
 
@@ -49,12 +50,12 @@ a:active {
 }
 
 
-// ============================================================================
+// =============================================================================
 // Typography
-// ============================================================================
+// ==========================================================================
 
-// Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
-// Fix IE6/7 heading font-size not being relative to the root font-size
+// Addresses font sizes and margins set differently in IE6/7
+// Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
 
 h1 {
     font-size: 2em;
@@ -114,6 +115,13 @@ dfn {
 mark {
     background: #ff0;
     color: #000;
+}
+
+// Addresses margins set differently in IE6/7
+
+p,
+pre {
+    margin: 1em 0;
 }
 
 // Corrects font family set oddly in IE6, S4/5, Chrome
@@ -177,19 +185,32 @@ sub {
 }
 
 
-// ============================================================================
+// =============================================================================
 // Lists
-// ============================================================================
+// ==========================================================================
 
-ul,
-ol {
-    margin-left: 0;
-    padding: 0 0 0 40px;
+// Addresses margins set differently in IE6/7
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
 }
 
 dd {
     margin: 0 0 0 40px;
 }
+
+// Addresses paddings set differently in IE6/7
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+// Corrects list images handled incorrectly in IE7
 
 nav ul,
 nav ol {
@@ -198,17 +219,17 @@ nav ol {
 }
 
 
-// ============================================================================
+// =============================================================================
 // Embedded content
-// ============================================================================
+// ==========================================================================
 
 // 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
 // 2. Improves image quality when scaled in IE7
 //    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
 
 img {
-    border: 0; // 1
-    -ms-interpolation-mode: bicubic; // 2
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
 }
 
 // Corrects overflow displayed oddly in IE9
@@ -218,9 +239,19 @@ svg:not(:root) {
 }
 
 
-// ============================================================================
+// =============================================================================
+// Figures
+// ==========================================================================
+
+// Addresses margin not present in IE6/7/8/9, S5, O11
+
+figure {
+    margin: 0;
+}
+
+// =============================================================================
 // Tables
-// ============================================================================
+// ==========================================================================
 
 // Remove most spacing between table cells
 

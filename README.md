@@ -15,6 +15,8 @@ You can also install the gem from your local fork:
 	$ rake build
 	$ rake install
 
+
+## Usage
 When creating a new project with compass:
 
 	$ compass create new_project -r compass-normalize --using compass-normalize
@@ -22,9 +24,6 @@ When creating a new project with compass:
 If using an existing project, edit your config.rb and add this line:
 
 	require 'compass-normalize'
-
-
-## Usage
 
 To use the normalize plugin, just import and include normalize:
 

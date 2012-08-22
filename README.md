@@ -7,36 +7,90 @@ This simple plugin for [Compass](http://compass-style.org/) enables you to use [
 
 From the command line:
 
-	$ (sudo) gem install compass-normalize
+```
+$ (sudo) gem install compass-normalize
+```
 
 You can also install the gem from your local fork:
 
-	$ git clone git://github.com/ksmandersen/compass-normalize.git
-	$ rake build
-	$ rake install
-
+```
+$ git clone git://github.com/ksmandersen/compass-normalize.git
+$ rake build
+$ rake install
+```
+	
+## Normalize Versions
+Normalize has two versions, a modern Normalize for Firefox 4+, Chrome, Safari 5+, Opera, and Internet Explorer 8+, and a legacy Normalize with support for all legacy versions of those browsers.
 
 ## Usage
+
+### Modern Normalize
 When creating a new project with compass:
 
-	$ compass create new_project -r compass-normalize --using compass-normalize
+```
+$ compass create <my_project> -r compass-normalize --using compass-normalize
+```
 
 If using an existing project, edit your config.rb and add this line:
 
-	require 'compass-normalize'
+```ruby
+require 'compass-normalize'
+```
 
 To use the normalize plugin, just import and include normalize:
 
-	@import normalize;
+```scss
+@import normalize;
+```
 
 You can also just import parts you need:
 
-	@import "normalize/base";  // Basic styles
-	@import "normalize/html5"; // HTML5 elements
-	@import "normalize/forms"; // Form elements
+```scss
+@import 'normalize/html5';
+@import 'normalize/base';
+@import 'normalize/links';
+@import 'normalize/typography';
+@import 'normalize/embeds';
+@import 'normalize/figures';
+@import 'normalize/forms';
+@import 'normalize/tables';
+```
+
+### Legacy Normalize
+When creating a new project with compass:
+
+```
+$ compass create <my_project> -r compass-normalize --using compass-normalize/legacy
+```
+
+If using an existing project, edit your config.rb and add this line:
+
+```ruby
+require 'compass-normalize'
+```
+
+To use the normalize plugin, just import and include normalize:
+
+```scss
+@import normalize-legacy;
+```
+
+You can also just import parts you need:
+
+```scss
+@import 'normalize-legacy/html5';
+@import 'normalize-legacy/base';
+@import 'normalize-legacy/links';
+@import 'normalize-legacy/typography';
+@import 'normalize-legacy/lists';
+@import 'normalize-legacy/embeds';
+@import 'normalize-legacy/figures';
+@import 'normalize-legacy/forms';
+@import 'normalize-legacy/tables';
+```
 
 ## Acknowledgements
-Many thanks to [Frederic Hemberger](https://github.com/fhemberger/) who contributed greatly to this project.
+Many thanks to [Frederic Hemberger](https://github.com/fhemberger/) and [Sam Richard](https://github.com/snugug) who contributed greatly to this project.
 
 ## License
 This is free and unencumbered software released into the public domain.

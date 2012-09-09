@@ -5,10 +5,12 @@ This simple plugin for [Compass](http://compass-style.org/) enables you to use [
 
 ## Installation
 
+It is highly encouraged to install from the [RubyGems build](http://rubygems.org/gems/compass-normalize) which can be found [here](http://rubygems.org/gems/compass-normalize).
+
 From the command line:
 
 ```
-$ (sudo) gem install compass-normalize
+$ gem install compass-normalize
 ```
 
 You can also install the gem from your local fork:
@@ -18,7 +20,7 @@ $ git clone git://github.com/ksmandersen/compass-normalize.git
 $ rake build
 $ rake install
 ```
-	
+
 ## Normalize Versions
 Normalize has two versions, a modern Normalize for Firefox 4+, Chrome, Safari 5+, Opera, and Internet Explorer 8+, and a legacy Normalize with support for all legacy versions of those browsers.
 

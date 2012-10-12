@@ -73,6 +73,12 @@ pre {
     word-wrap: break-word;
 }
 
+// Sets consistent quote types.
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
 @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
 
 // 1. Addresses CSS quotes not supported in IE6/7
@@ -87,12 +93,6 @@ q:after {
   content: ''; // 2
   content: none; // 2
 }
-}
-
-// Sets consistent quote types.
-
-q {
-    quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
 // Addresses inconsistent and variable font size in all browsers.

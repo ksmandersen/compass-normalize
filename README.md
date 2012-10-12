@@ -52,6 +52,7 @@ You can also just import parts you need:
 @import 'normalize/base';
 @import 'normalize/links';
 @import 'normalize/typography';
+@import 'normalize/lists'; // Only for legacy suport (see below).
 @import 'normalize/embeds';
 @import 'normalize/figures';
 @import 'normalize/forms';
@@ -59,37 +60,23 @@ You can also just import parts you need:
 ```
 
 ### Legacy Normalize
-When creating a new project with compass:
+This plugin has been re-written to use compass's native cross-browser variables to determine compatability. http://compass-style.org/reference/compass/support/
+
+You can still create a legacy project using the following:
 
 ```
 $ compass create <my_project> -r compass-normalize --using compass-normalize/legacy
 ```
 
-If using an existing project, edit your config.rb and add this line:
-
-```ruby
-require 'compass-normalize'
-```
-
-To use the normalize plugin, just import and include normalize:
-
+But to just import normalize and include legacy portions of the code, set the necissary legacy-support variables to true:
 ```scss
-@import normalize-legacy;
+$legacy-support-for-ie6: true;
+$legacy-support-for-ie7: true;
+$legacy-support-for-ie8: true;
+$legacy-support-for-mozilla: true;
+@import normalize;
 ```
-
-You can also just import parts you need:
-
-```scss
-@import 'normalize-legacy/html5';
-@import 'normalize-legacy/base';
-@import 'normalize-legacy/links';
-@import 'normalize-legacy/typography';
-@import 'normalize-legacy/lists';
-@import 'normalize-legacy/embeds';
-@import 'normalize-legacy/figures';
-@import 'normalize-legacy/forms';
-@import 'normalize-legacy/tables';
-```
+You can also import any part that you want, just like the code for modern normalize.
 
 ## Acknowledgements
 Many thanks to [Frederic Hemberger](https://github.com/fhemberger/) and [Sam Richard](https://github.com/snugug) who contributed greatly to this project.

@@ -8,6 +8,9 @@
 
 img {
     border: 0;
+    @if $legacy-support-for-ie7 {
+        -ms-interpolation-mode: bicubic;
+    }
 }
 
 // Corrects overflow displayed oddly in IE 9.

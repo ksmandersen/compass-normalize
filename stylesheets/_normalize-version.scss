@@ -1,6 +1,6 @@
-@mixin normalize-version($partial: false, $legacy: false) {
+@mixin normalize-version($partial: false) {
   $version: 'v2.0.1';
-  @if $legacy {
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     $version: 'v1.0.1';
   }
   

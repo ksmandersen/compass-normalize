@@ -79,7 +79,7 @@ $legacy-support-for-mozilla: true;
 You can also import any part that you want, just like the code for modern normalize.
 
 ## Acknowledgements
-Many thanks to [Frederic Hemberger](https://github.com/fhemberger/) and [Sam Richard](https://github.com/snugug) who contributed greatly to this project.
+Many thanks to [Frederic Hemberger](https://github.com/fhemberger/), [Sam Richard](https://github.com/snugug) and [Ian Carrico](https://github.com/ChinggizKhan) who contributed greatly to this project.
 
 ## License
 This is free and unencumbered software released into the public domain.

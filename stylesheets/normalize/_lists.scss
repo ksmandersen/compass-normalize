@@ -1,5 +1,4 @@
-@include normalize-version('Lists', true);
-
+@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
 // ==========================================================================
 // Lists
 // ==========================================================================
@@ -32,4 +31,4 @@ nav ol {
     list-style: none;
     list-style-image: none;
 }
-
+}

@@ -24,6 +24,12 @@ strong {
     font-weight: bold;
 }
 
+@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+blockquote {
+    margin: 1em 40px;
+}
+}
+
 // Addresses styling not present in Safari 5 and Chrome.
 
 dfn {
@@ -37,6 +43,15 @@ mark {
     color: #000;
 }
 
+@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+// Addresses margins set differently in IE 6/7.
+
+p,
+pre {
+    margin: 1em 0;
+}
+}
+
 // Corrects font family set oddly in Safari 5 and Chrome.
 
 code,
@@ -44,6 +59,9 @@ kbd,
 pre,
 samp {
     font-family: monospace, serif;
+     @if $legacy-support-for-ie6 {
+        _font-family: 'courier new', monospace;
+     }
     font-size: 1em;
 }
 
@@ -59,6 +77,22 @@ pre {
 
 q {
     quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+
+// 1. Addresses CSS quotes not supported in IE6/7
+// 2. Addresses quote property not supported in S4
+
+q {
+  quotes: none; // 1
+}
+
+q:before,
+q:after {
+  content: ''; // 2
+  content: none; // 2
+}
 }
 
 // Addresses inconsistent and variable font size in all browsers.

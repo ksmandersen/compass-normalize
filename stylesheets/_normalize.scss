@@ -1,3 +1,6 @@
+// Compass' Legacy Support for Mozilla, defaulted.
+$legacy-support-for-mozilla: true !default;
+
 // Normalize Version Comment
 @import 'normalize-version';
 @include normalize-version;

@@ -52,7 +52,7 @@ You can also just import parts you need:
 @import 'normalize/base';
 @import 'normalize/links';
 @import 'normalize/typography';
-@import 'normalize/lists'; // Only for legacy suport (see below).
+@import 'normalize/lists'; // Only for legacy support (see below).
 @import 'normalize/embeds';
 @import 'normalize/figures';
 @import 'normalize/forms';

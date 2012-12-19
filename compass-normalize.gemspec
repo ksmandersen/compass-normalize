@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release information
-  s.version = "1.4"
-  s.date = "2012-10-16"
+  s.version = "1.4.2"
+  s.date = "2012-12-19"
 
   # Gem details
   s.name = "compass-normalize"
@@ -21,5 +21,5 @@ Gem::Specification.new do |s|
 
   # Gem specifics
   s.rubygems_version = %q{1.3.6}
-  s.add_dependency("compass", [">= 0.11.5"])
+  s.add_dependency("compass", [">= 0.12.0"])
 end

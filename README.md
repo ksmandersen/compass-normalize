@@ -42,7 +42,7 @@ require 'compass-normalize'
 To use the normalize plugin, just import and include normalize:
 
 ```scss
-@import normalize;
+@import "normalize";
 ```
 
 You can also just import parts you need:

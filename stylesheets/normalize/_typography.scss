@@ -4,11 +4,42 @@
 // Typography
 // ==========================================================================
 
-// Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
-// Safari 5, and Chrome.
+// Address variable `h1` font-size and margin within `section` and `article`
+// contexts in Firefox 4+, Safari 5, and Chrome.
+@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+// Addresses font sizes and margins set differently in IE 6/7.
+}
 
 h1 {
     font-size: 2em;
+    margin: 0.67em 0;
+}
+
+@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
 }
 
 // Addresses styling not present in IE 8/9, Safari 5, and Chrome.
@@ -36,7 +67,16 @@ dfn {
     font-style: italic;
 }
 
-// Addresses styling not present in IE 8/9.
+// Address differences between Firefox and other browsers.
+// Known issue: no IE 6/7 normalization.
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+// Addresses styling not present in IE 6/7/8/9.
 
 mark {
     background: #ff0;

@@ -102,8 +102,8 @@ html input[disabled] {
     cursor: default;
 }
 
-// 1. Addresses box sizing set to `content-box` in IE 8/9.
-// 2. Removes excess padding in IE 8/9.
+// 1. Addresses box sizing set to `content-box` in IE 8/9/10.
+// 2. Removes excess padding in IE 8/9/10.
 @if $legacy-support-for-ie7 {
 // 3. Removes excess padding in IE 7.
 //    Known issue: excess padding remains in IE 6.

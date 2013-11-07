@@ -43,6 +43,7 @@ audio:not([controls]) {
 
 // Addresses styling for `hidden` attribute not present in IE 8/9.
 
-[hidden] {
+[hidden],
+template {
     display: none;
 }

@@ -4,11 +4,6 @@
 // Typography
 // ==========================================================================
 
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
-
 // Addresses styling not present in IE 8/9, Safari 5, and Chrome.
 
 abbr[title] {
@@ -28,13 +23,12 @@ dfn {
     font-style: italic;
 }
 
-// Address differences between Firefox and other browsers.
-// Known issue: no IE 6/7 normalization.
+// Address variable `h1` font-size and margin within `section` and `article`
+// contexts in Firefox 4+, Safari 5, and Chrome.
 
-hr {
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 0;
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
 }
 
 // Addresses styling not present in IE 8/9.
@@ -42,27 +36,6 @@ hr {
 mark {
     background: #ff0;
     color: #000;
-}
-
-// Corrects font family set oddly in Safari 5 and Chrome.
-
-code,
-kbd,
-pre,
-samp {
-    font-family: monospace, serif;
-     @if $legacy-support-for-ie6 {
-        _font-family: 'courier new', monospace;
-     }
-    font-size: 1em;
-}
-
-// Improves readability of pre-formatted text in all browsers.
-
-pre {
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
 }
 
 // Addresses inconsistent and variable font size in all browsers.

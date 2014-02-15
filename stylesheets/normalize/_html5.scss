@@ -23,14 +23,15 @@ summary {
 
 // Corrects `inline-block` display not defined in IE 8/9.
 
+// 1. Correct `inline-block` display not defined in IE 8/9.
+// 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+
 audio,
 canvas,
+progress,
 video {
-    display: inline-block;
-    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-        *display: inline;
-        *zoom: 1;
-    }
+    display: inline-block; // 1
+    vertical-align: baseline; // 2
 }
 
 // Prevents modern browsers from displaying `audio` without controls.

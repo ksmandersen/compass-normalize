@@ -22,11 +22,11 @@ $ rake install
 ```
 
 ## Normalize Versions
-Normalize has two versions, a modern Normalize for Firefox 4+, Chrome, Safari 5+, Opera, and Internet Explorer 8+, and a legacy Normalize with support for all legacy versions of those browsers.
+Since v3, Normalize only has one version for modern browsers (Firefox 4+, Chrome, Safari 5+, Opera, and Internet Explorer 8+). If you
+need support for older browsers, please use the older version of Compass normalize, that include a legacy Normalize.
 
 ## Usage
 
-### Modern Normalize
 When creating a new project with compass:
 
 ```
@@ -52,31 +52,11 @@ You can also just import parts you need:
 @import 'normalize/base';
 @import 'normalize/links';
 @import 'normalize/typography';
-@import 'normalize/lists'; // Only for legacy support (see below).
 @import 'normalize/embeds';
-@import 'normalize/figures';
+@import 'normalize/groups';
 @import 'normalize/forms';
 @import 'normalize/tables';
 ```
-
-### Legacy Normalize
-This plugin has been re-written to use compass's native cross-browser variables to determine compatability. http://compass-style.org/reference/compass/support/
-
-You can still create a legacy project using the following:
-
-```
-$ compass create <my_project> -r compass-normalize --using compass-normalize/legacy
-```
-
-But to just import normalize and include legacy portions of the code, set the necissary legacy-support variables to true:
-```scss
-$legacy-support-for-ie6: true;
-$legacy-support-for-ie7: true;
-$legacy-support-for-ie8: true;
-$legacy-support-for-mozilla: true;
-@import normalize;
-```
-You can also import any part that you want, just like the code for modern normalize.
 
 ## Acknowledgements
 Many thanks to [Frederic Hemberger](https://github.com/fhemberger/), [Sam Richard](https://github.com/snugug) and [Ian Carrico](https://github.com/ChinggizKhan) who contributed greatly to this project.

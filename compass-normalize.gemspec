@@ -1,11 +1,11 @@
 Gem::Specification.new do |s|
   # Release information
-  s.version = "1.4.3"
-  s.date = "2013-03-16"
+  s.version = "1.5"
+  s.date = "2014-02-25"
 
   # Gem details
   s.name = "compass-normalize"
-  s.authors = ["Kristian Andersen", "Frederic Hemberger", "Sam Richard", "Ian Carrico"]
+  s.authors = ["Kristian Andersen", "Michaël Gallego", "Frederic Hemberger", "Sam Richard", "Ian Carrico"]
   s.summary = %q{A compass plugin for using normalize.css}
   s.description = %q{This simple plugin for Compass enables you to use normalize.css in your stylesheets without having to download it.}
   s.email = ["me@kristianandersen.me", "mail@frederic-hemberger.de"]

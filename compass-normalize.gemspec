@@ -21,5 +21,5 @@ Gem::Specification.new do |s|
 
   # Gem specifics
   s.rubygems_version = %q{1.3.6}
-  s.add_dependency("compass", [">= 1.0.0"])
+  s.add_dependency("compass", [">= 1.0.0.alpha.18"])
 end

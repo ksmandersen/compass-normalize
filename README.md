@@ -13,7 +13,7 @@ From the command line:
 $ gem install compass-normalize
 ```
 
-You can also install the gem from your local fork:
+You can also install the gem from your local clone:
 
 ```
 $ git clone git://github.com/ksmandersen/compass-normalize.git
